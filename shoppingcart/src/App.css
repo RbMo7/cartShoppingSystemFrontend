@@ -12,6 +12,48 @@ body{
 }
 
 
+
+.navBar {
+  height: 20%;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.navBar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navBar li{
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.navBar a{
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0px 5px;
+}
+
+.nav li:hover{
+  background-color: #302e2e;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  transition: 0.2s ease-out;
+
+}
+
 section { 
   width: 80%;
   display: flex;
@@ -49,6 +91,7 @@ section {
 
 .secHover :hover{
   background-color: #242323;
+  transition: 0.3s ease-out;
 }
 
 svg {

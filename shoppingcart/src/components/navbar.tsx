@@ -1,15 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-type Props = {}
+type Props = {};
 
-type State = {}
+type State = {};
 
-export default class navbar extends Component<Props, State> {
-  state = {}
-
+export default class Navbar extends Component<Props, State> {
   render() {
     return (
-      <div>navbar</div>
-    )
+      <>
+        <div className="navBar">
+          <div className="">
+            <a href="/">Shopping Cart System</a>
+          </div>
+          <ul>
+            <li>
+              <a href="/">Page No 1</a>
+            </li>
+            <li>
+              <a href="/">Page No 2</a>
+            </li>
+          </ul>
+        </div>
+      </>
+    );
   }
 }
