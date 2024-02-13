@@ -50,3 +50,15 @@ section {
 .secHover :hover{
   background-color: #242323;
 }
+
+svg {
+  transform: rotate(270deg);
+}
+
+.accordian.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.1s ease-in
+}
