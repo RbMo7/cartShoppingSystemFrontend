@@ -52,7 +52,7 @@ const Productcard = ({img_src, title, description, price, isbn, addToCart}: prop
               <img src={img_src} className='productimg' alt='Img not available' />
             </div>
             <div className="subcard content">
-              <div className="titleText">{title}</div>
+              <div className="titleText"><p>{title}</p></div>
               <div className="animatediv">
                 <div className="description" ><p>{description}</p></div>
                 <div className="size"></div>

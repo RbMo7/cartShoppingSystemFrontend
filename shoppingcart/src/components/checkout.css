@@ -26,6 +26,7 @@
 .checkOutImage{
     width: 100%;
     height: cover;
+    object-fit: scale-down;
 }
 
 .titleCheckout { 

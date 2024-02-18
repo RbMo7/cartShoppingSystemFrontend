@@ -38,7 +38,7 @@
     margin: 0px auto;
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: scale-down;
     /* margin-left: auto;
     margin-right: auto; */
     /* border: 1px solid white; */
@@ -68,11 +68,21 @@
 
 .titleText {
     display: block;
+    text-overflow: ellipsis;
+    
+    width: max-content;
+    max-width: 250px;
+    
+}
+
+.titleText p{
     font-family: monospace;
     font-size: 1.5rem;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
 
 
 /* .description {
