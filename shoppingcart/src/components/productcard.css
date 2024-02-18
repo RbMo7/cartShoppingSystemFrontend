@@ -1,0 +1,194 @@
+.maincard {
+    width: fit-content;
+    height: auto;
+    /* border: 1px solid white; */
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    /* margin-top: 60px; */
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.maincard .bordercard {
+    position: relative;
+    
+    overflow: hidden;
+}
+
+.productPageDetails {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subcard {
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    /* border: 1px solid white; */
+}
+
+
+
+.productimg {
+    position: relative; 
+    margin-top: -50px;
+    margin: 0px auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* border: 1px solid white; */
+    opacity: 1;
+    z-index: 2;
+}
+
+.bordercard::before{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65%; /* Adjust border properties as needed */
+    z-index: -1;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    border-radius: 10px;
+    transition: 0.1s ease;
+    max-height: 100%;
+}
+
+
+
+
+.titleText {
+    display: block;
+    font-family: monospace;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+/* .description {
+    justify-content: space-between;
+    text-align: center;
+    font-size: 2vb;
+    padding: 10px;
+    transition: 1s ease-in;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+} */
+
+.description p {
+    font-size: 0.8rem;
+    word-break: normal;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+}
+
+
+.description{
+    text-overflow: ellipsis;
+}
+
+.animatediv{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    border: 1px solid white;
+    z-index: -1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.maincard .bordercard:hover .animatediv{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.bordercard:hover::before { 
+    height: 100%;
+}
+
+.bordercard:hover::before{
+    border-top: 5px solid white;
+}
+
+.bottomItems {
+    position: relative;
+    margin: 5px 0px 0px 0px;
+    font-size: 3vb;
+    padding: 10px;
+    top:-50px;
+    transition: all 0.2s ease-in;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    position: relative;
+    top: -10px;
+    
+}
+
+.maincard .bordercard:hover .bottomItems{
+    top: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.maincard .bordercard:hover .subcard{
+    border-bottom: 1px solid white;
+}
+
+.bottomItems .addToCart{
+    text-decoration: none;
+}
+
+
+/* CSS */
+.button-89 {
+  --b: 2px;   /* border thickness */
+  --s: .25em; /* size of the corner */
+  --color: #ffffff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}

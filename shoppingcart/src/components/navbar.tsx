@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -14,10 +15,13 @@ export default class Navbar extends Component<Props, State> {
           </div>
           <ul>
             <li>
-              <a href="/">Page No 1</a>
+            <Link to="/accordian">Accordian List</Link>
             </li>
             <li>
-              <a href="/">Page No 2</a>
+              <Link to="/productpage">Shopping Cart</Link>
+            </li>
+            <li>
+            <Link to="/checkoutpage">Check Out</Link>
             </li>
           </ul>
         </div>

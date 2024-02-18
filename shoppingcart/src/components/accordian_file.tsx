@@ -1,21 +1,27 @@
 import React, { Component, useState} from "react";
 import { render } from "react-dom";
+import { accordionData } from "../assets/accordianData";
 
-interface Props{
-    title: string;
-    content: string
-}
 
-const Accordian_file = ({title, content}: Props) => {
-  const [clickState, clickStateSet] = useState(false);
+const Accordian_file = () => {
+const [currentIndex, currentIndexUpdate] = useState(0);
 
+const toggleAccordion = (index : any) => {
+    currentIndexUpdate(currentIndex === index ? null : index);
+  };
 
   return (
+    
     <section className="secHover">
-      <div
-        className={`${clickState? 'accordian active': 'accordian'}`}
+        {accordionData.map(({ title, content }, index) => (
+
+      
+      <div key={index}
+        className={`accordian ${currentIndex == index? ' active': ''}`}
         onClick={() => {
-          clickStateSet(!clickState);
+          toggleAccordion(index)
+          console.log("The index is " , index);
+          console.log("The current index is ", currentIndex);
         }}
       >
         <div className="items">
@@ -30,7 +36,9 @@ const Accordian_file = ({title, content}: Props) => {
           </p>
         </div>
       </div>
+      ))}
     </section>
+    
   );
 };
 

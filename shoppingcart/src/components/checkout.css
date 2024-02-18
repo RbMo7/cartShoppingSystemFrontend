@@ -1,0 +1,123 @@
+.checkOutContainer{
+    width: 100%;
+    height: 150px;
+    border-bottom: 4px solid white;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.subContainer{
+    display: flex;
+    width: 80%;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+    display: flex;
+    border: 1px solid white;
+}
+
+.checkOutImage{
+    width: 100%;
+    height: cover;
+}
+
+.titleCheckout { 
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    
+    margin-left: 10px;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.checkOutText {
+    text-align: center;
+    position: relative;
+    /* border: 1px solid white; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.quantityCheckout{
+    /* border: 1px solid white; */
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    min-width: 150px;
+}
+
+.price{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.pricetag{
+    position: relative;
+    left: 50%;
+}
+
+.mainContainer{
+    /* border: 1px solid white; */
+    display: block;
+    align-items: center;
+}
+
+.mainTexts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    
+}
+
+.Container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 50%;
+    height: 100%;
+    height: fit-content;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+
+.indexNo{
+    display: flex;
+    position: absolute;
+    left: 25px;
+    font-size: 1.5rem;
+    border-right: 1px solid white ;
+    border-radius: 15px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+
+.line{
+    position: relative;
+    top: 130px;
+    width: 50%;
+    
+    
+    margin: 0 auto;
+}

@@ -1,17 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #1c1c1c;
   color: white;
   font-family: Georgia;
-  
 }
-
-
 
 .navBar {
   height: 20%;
@@ -31,12 +28,12 @@ body{
   gap: 1rem;
 }
 
-.navBar li{
+.navBar li {
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
 }
 
-.navBar a{
+.navBar a {
   color: inherit;
   text-decoration: none;
   height: 100%;
@@ -46,22 +43,20 @@ body{
   margin: 0px 5px;
 }
 
-.nav li:hover{
+.nav li:hover {
   background-color: #302e2e;
   border-left: 1px solid white;
   border-right: 1px solid white;
   transition: 0.2s ease-out;
-
 }
 
-section { 
+section {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
-
 
 .accordian {
   max-width: 50%;
@@ -78,18 +73,18 @@ section {
   align-items: center;
 }
 
-.data{
+.data {
   max-height: 0;
   overflow: hidden;
-  transition: 0.5s ease-in;
+  transition: max-height 0.5s ;
 }
 
 .accordian.active .data {
   max-height: 300px;
-  transition: 0.7s ease-out;
+  
 }
 
-.secHover :hover{
+.secHover :hover {
   background-color: #242323;
   transition: 0.3s ease-out;
 }
@@ -103,5 +98,9 @@ svg {
 }
 
 svg {
-  transition: transform 0.1s ease-in
+  transition: transform 0.4s ease-in;
+}
+
+.return_text {
+  font-size: 1rem;
 }
